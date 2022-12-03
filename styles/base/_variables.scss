@@ -1,0 +1,73 @@
+// Colors
+$white: rgb(255, 255, 255);
+$light-gray: rgb(185, 185, 185);
+$black: rgb(0, 0, 0);
+
+$primary: rgb(103, 119, 158);
+$secondary: rgb(236, 142, 54);
+$dark: rgb(46, 46, 46);
+
+// Breakpoints
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1500px;
+
+$breakpoints: (
+  xs: $xs,
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl,
+);
+
+// Spacing
+$spacers: (
+  0: 0px,
+  1: 0.5rem,
+  2: 1rem,
+  3: 1.5rem,
+  4: 3rem,
+  5: 6rem,
+  6: 9rem,
+  7: 12rem,
+);
+
+$positions: (
+  0: 0%,
+  50: 50%,
+  100: 100%,
+);
+
+// Max-widths
+$container-max-widths: (
+  xs: 100%,
+  sm: 100%,
+  md: 800px,
+  lg: 950px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+// Grid
+$grid-columns: 12;
+$grid-gutters: $spacers;
+
+// Font
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-size: 1rem;
+$font-size-h1: $font-size * 2.5;
+$font-size-h2: $font-size * 2;
+$font-size-h3: $font-size * 1.75;
+$font-size-h4: $font-size * 1.5;
+$font-size-h5: $font-size * 1.25;
+$font-size-h6: $font-size;

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap");
+@import "base/reset";
+@import "base/variables";
+@import "base/spacing";
+@import "base/text";
+@import "base/grid";
+@import "base/position";
+@import "base/sizing";
+@import "base/display";
+@import "base/flexbox";
+@import "base/pointer";
+@import "base/button";
+
+$azul: #005082;
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px,
+// );
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+.bg-inverted {
+  background: linear-gradient(
+    90deg,
+    rgba(26, 116, 249, 1) 0%,
+    rgba(35, 48, 112, 1) 100%
+  );
+}
+
+@media (min-width: 800px) {
+  .bg-inverted {
+    background: linear-gradient(
+      90deg,
+      rgba(26, 116, 249, 1) 0%,
+      rgba(35, 48, 112, 1) 80%
+    );
+  }
+}
+
+body {
+  background: radial-gradient(
+    circle farthest-side at 0% 0,
+    rgba(26, 116, 249, 1),
+    rgba(35, 48, 112, 1)
+  );
+  min-height: 100vh;
+}
+
+// .container {
+//   padding-inline: 2rem;
+//   margin: 0 auto;
+// }
+
+// @media (min-width: 800px) {
+//   .container {
+//     padding-inline: 2rem;
+//   }
+// }
+
+// @media (min-width: 1200px) {
+//   .container {
+//     max-width: 1300px;
+//   }
+// }
+
+.white-text {
+  color: white;
+}
+
+.imagen {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+.btn {
+  border-radius: 5rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+  padding: 1.5rem 2.5rem;
+}
+
+a.btn {
+  display: inline-block;
+  width: max-content;
+}
+
+.caracteristicas {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+  row-gap: 4rem;
+}
+
+@include breakpoint-at(sm) {
+  .caracteristicas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@include breakpoint-at(lg) {
+  .caracteristicas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.caracteristica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+
+  max-width: 150px;
+  text-align: center;
+
+  svg {
+    padding-bottom: 1rem;
+    font-size: 5rem;
+  }
+}
