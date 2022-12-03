@@ -5,10 +5,15 @@ import { MdEngineering } from "react-icons/md";
 import { BsFillMouse2Fill } from "react-icons/bs";
 import { MdLibraryBooks } from "react-icons/md";
 import Panel from "../components/Panel";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Modulo Didáctico Virtual</title>
+      </Head>
+
       <Header />
       <div className="container white-text pt-3 pt-lg-4 pb-4 text-center text-lg-left">
         <div className="row align-items-center">
