@@ -1,24 +1,20 @@
-import Image from "next/image";
 import Header from "../components/Header";
-import tableroAbierto from "../img/tablero-abierto.png";
+
 import { AiOutlineLaptop } from "react-icons/ai";
 import { MdEngineering } from "react-icons/md";
 import { BsFillMouse2Fill } from "react-icons/bs";
 import { MdLibraryBooks } from "react-icons/md";
+import Panel from "../components/Panel";
 
 export default function Home() {
-  const image = (
-    <div className="display-flex justify-content-center pb-4 pb-lg-0">
-      <Image src={tableroAbierto} className="imagen" alt="Module didactico" />
-    </div>
-  );
-
   return (
     <>
       <Header />
       <div className="container white-text pt-3 pt-lg-4 pb-4 text-center text-lg-left">
         <div className="row align-items-center">
-          <div className="col-lg display-lg-none">{image}</div>
+          <div className="col-lg display-lg-none">
+            <Panel />
+          </div>
 
           <div className="col-lg">
             <p className="font-size-3 font-size-lg-1 font-weight-bold">
@@ -38,7 +34,9 @@ export default function Home() {
               ¡Visita el Modulo!
             </a>
           </div>
-          <div className="col-lg display-none display-lg-block">{image}</div>
+          <div className="col-lg display-none display-lg-block">
+            <Panel />
+          </div>
         </div>
       </div>
 
