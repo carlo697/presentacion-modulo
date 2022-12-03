@@ -6,7 +6,7 @@ import classNames from "classnames";
 import style from "./Panel.module.scss";
 
 const Panel = () => {
-  const [image, setImage] = useState(openPanel);
+  const [image, setImage] = useState(closedPanel);
 
   useEffect(() => {
     const interval = setInterval(() => {
