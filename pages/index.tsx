@@ -8,7 +8,7 @@ import { MdLibraryBooks } from "react-icons/md";
 
 export default function Home() {
   const image = (
-    <div className="display-flex justify-content-center pb-4">
+    <div className="display-flex justify-content-center pb-4 pb-lg-0">
       <Image src={tableroAbierto} className="imagen" alt="Module didactico" />
     </div>
   );
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className="container white-text pt-3 pt-lg-5 pb-4 text-center text-lg-left">
+      <div className="container white-text pt-3 pt-lg-4 pb-4 text-center text-lg-left">
         <div className="row align-items-center">
           <div className="col-lg display-lg-none">{image}</div>
 
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container caracteristicas white-text pb-5">
+      <div className="container caracteristicas white-text pb-2">
         <div className="caracteristica">
           <AiOutlineLaptop /> Educación a Distancia
         </div>
